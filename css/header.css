@@ -1,0 +1,179 @@
+@media screen and (max-width: 425px) {
+  header {
+    padding: 0 !important;
+  }
+  #nav-bar {
+    display: none;
+  }
+  #nav-bar-mobile {
+    display: block !important;
+    display: flex !important;
+  }
+}
+header {
+  /* border: solid 1px red; */
+
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100vw;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+
+  background: linear-gradient(
+    to bottom,
+    var(--bodyBg) 80%,
+    rgba(255, 0, 0, 0) 100%
+  );
+}
+
+#nav-bar ul li {
+  display: inline;
+  margin-right: 2rem;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--colorWhite);
+
+  cursor: pointer;
+}
+/* header ul li:hover {
+  color: var(--colorPrimary);
+  filter: drop-shadow(0px 0px 10px var(--colorPrimary));
+} */
+#nav-bar img {
+  height: 60px;
+  display: block;
+  filter: drop-shadow(0px 0px 10px var(--colorPrimary));
+}
+#nav-bar > div {
+  position: relative;
+  margin-right: 100px;
+  color: var(--colorWhite);
+  font-size: 40px;
+  /* filter: drop-shadow(0px 0px 10px var(--colorPrimary)); */
+}
+#nav-bar {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
+#nav-bar > div > div {
+  /* border: solid 2px var(--colorPrimary); */
+  height: 80px;
+  width: 80px;
+}
+#nav-bar button {
+  background-color: var(--bgColor);
+  height: 100%;
+  width: 80px;
+  border: none;
+
+  margin-left: 100px;
+}
+
+#nav-bar button i {
+  font-size: 40px;
+}
+
+#nav-bar-mobile {
+  display: none;
+  height: 70px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 0px 0px 4px 4px;
+
+  /* display: flex !important; */
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#nav-bar-mobile img {
+  height: 50px;
+  margin-right: 8px;
+
+}
+#nav-bar-mobile h5 {
+  color: var(--colorWhite);
+  font-size: 20px;
+}
+
+#nav-bar-mobile button {
+  background-color: var(--bgColor);
+  height: 100%;
+  width: 80px;
+  border: none;
+
+  margin-left: 100px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>> */
+
+.nav {
+  font-family: "Titillium Web";
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+.nav * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  /* margin: .5em 1em; */
+  padding: 0;
+}
+
+.nav a {
+  padding: 0.3em 0.5em;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a::before,
+.nav a::after {
+  content: "";
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: "";
+  right: 0;
+  top: 0;
+  border-top: 3px solid var(--colorPrimary);
+  border-right: 3px solid var(--colorPrimary);
+  transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+  content: "";
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid var(--colorPrimary);
+  border-left: 3px solid var(--colorPrimary);
+  transform: translate(100%, -50%);
+}
+
+.nav a:hover:before,
+.nav a:hover:after {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: var(--colorPrimary);
+}

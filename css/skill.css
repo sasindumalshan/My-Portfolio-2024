@@ -1,0 +1,90 @@
+#skill-box > div:nth-child(1) > span:nth-child(1) {
+  color: var(--colorPrimary);
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 22.72px;
+  /* display: block; */
+}
+#skill-box > div:nth-child(1) > span:nth-child(2) {
+  color: var(--colorWhite);
+  font-size: 32px;
+  font-weight: 400;
+}
+#skill-box > div:nth-child(1) p {
+  color: #757575;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+#skill-box > div:nth-child(1) {
+  /* width: 503px; */
+}
+
+#skill-box > div > div > img {
+  height: 43px;
+}
+
+#skill-box {
+  margin-top: 30px;
+}
+
+.tec-box {
+  width: 240px;
+  padding: 40px;
+}
+
+#over-flow {
+  position: relative;
+  overflow-x: scroll;
+  width: 100%;
+  scrollbar-width: none;
+  display: flex;
+  justify-content: center;
+}
+
+#over-flow-child{
+  width: fit-content;
+  height: 100%;
+  padding: 20px;
+
+}
+.scroll-shadow {
+  height: 100%;
+  position: absolute;
+  width: 5px;
+  background-color: var(--bodyBg);
+  right: 0;
+  height: 100%;
+  filter: drop-shadow(-30px 0px 30px var(--bodyBg));
+}
+.scroll-shadow-left {
+  height: 100%;
+  position: absolute;
+  width: 5px;
+  background-color: #11161c;
+  left: 0;
+  height: 100%;
+  filter: drop-shadow(30px 0px 20px #11161c);
+  z-index: 1;
+}
+
+#skill-box > div:nth-child(2) {
+  position: relative;
+  width: 78%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 425px) {
+  #skill-box>div>span:nth-child(1){
+    width: 353px;
+  }
+  #skill-box>div>span:nth-child(2){
+    font-size: 23px !important;
+  }
+  #skill-box>div>p:nth-child(3){
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,43 @@
+#project-box > div:nth-child(1) > span:nth-child(1) {
+  color: var(--colorPrimary);
+  font-size: 71px;
+  font-weight: 800;
+  letter-spacing: 22.72px;
+  display: block;
+}
+#project-box > div:nth-child(1) > span:nth-child(2) {
+  color: var(--colorWhite);
+  font-size: 41px;
+  font-weight: 800;
+}
+#project-box > div:nth-child(1) p {
+  color: #757575;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+#project-box > div:nth-child(1) p > span {
+  color: var(--colorPrimary);
+  text-decoration-line: underline;
+  font-weight: 400;
+  display: block;
+}
+
+@media screen and (max-width: 425px) {
+  #project-box > div >span:nth-child(1){
+    font-size: 30px !important;
+    letter-spacing: 2px !important;
+  }
+  #project-box > div >span:nth-child(2){
+    font-size: 23px !important;
+  }
+  #project-box > div >p{
+    font-size: 14px !important;
+  }
+  #projrct-temp{
+    display: none;
+  }
+  #project-content >img{
+    width: 90%;
+  }
+}

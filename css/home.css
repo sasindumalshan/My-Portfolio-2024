@@ -1,0 +1,144 @@
+@media screen and (max-width: 425px) {
+  #home-title h1:nth-child(1) {
+    font-size: 35px !important;
+  }
+  #home-title h1:nth-child(2) {
+    font-size: 45px !important;
+    letter-spacing: 5px !important;
+  }
+
+  #home {
+    padding: 30px !important;
+    /* padding-top: 10px !important; */
+    /* border: solid 1px blue; */
+  }
+
+  #home-box {
+    width: 425px !important;
+    /* border: solid 1px red; */
+  }
+
+  .sec-texts li {
+    font-size: 30px !important;
+  }
+  #download-btn {
+    height: 40px !important;
+    width: 140px !important;
+  }
+  #home-content{
+    gap: 10px !important;
+    margin-top: 15px !important;
+  }
+  #home-content img{
+    height: 300px;
+  }
+}
+
+#home {
+  position: relative;
+  max-width: 100%;
+}
+
+#home h1 {
+  color: var(--colorWhite);
+  font-weight: 800;
+}
+
+#home-title h1:nth-child(1) {
+  font-size: 55px;
+}
+#home-title h1:nth-child(2) {
+  font-size: 64px;
+  letter-spacing: 10px;
+}
+#home-title h1:nth-child(3) {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+#home-box {
+  color: #b6b3b3;
+  font-weight: 400;
+  width: 560px;
+}
+#download-btn {
+  width: 250px;
+  height: 60px;
+  background-color: var(--colorPrimary);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+
+  cursor: pointer;
+}
+
+#home-content {
+  gap: 200px;
+  margin-top: 100px;
+}
+
+#shape {
+  width: 90%;
+  height: 100%;
+
+  /* background-color: var(--bgColor); */
+  /* background: linear-gradient(to bottom, var(--bodyBg) 10%, rgba(0, 0, 0, 0.147) 100%); */
+
+  clip-path: polygon(75% 0%, 100% 0%, 75% 100%, 0% 275%);
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrapper .sec-texts {
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+
+.sec-texts li {
+  position: relative;
+  top: 0;
+  font-weight: 800;
+  font-size: 45px;
+  color: rgb(255, 255, 255);
+  list-style: none;
+  padding: 0 20px;
+  /* text-shadow: 0 0 10px #0ef; */
+  animation: slide 10s steps(3) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -270px;
+  }
+}
+
+@keyframes colorful {
+  100% {
+    filter: hue-rotate(270deg);
+  }
+}
+
+.sec-texts li span {
+  position: relative;
+}
+
+.sec-texts li span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 600px;
+  height: 90px;
+  background: var(--bodyBg);
+  border-left: 4px solid rgb(255, 255, 255);
+  animation: typing 1.5s steps(10) infinite alternate;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
